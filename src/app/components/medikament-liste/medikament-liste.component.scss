@@ -1,0 +1,42 @@
+:host {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  z-index: 1;
+  overflow-y: auto;
+  position: relative;
+  height: calc(100% - 5rem - 2rem);
+
+  .card {
+    color: white;
+    background: transparent;
+    border: 1px solid #ff8400;
+
+    &:not(:first-child) {
+      border-top: none;
+    }
+  }
+}
+
+.help-icon {
+  position: absolute;
+  left: 78%;
+  top: 3%;
+}
+
+.btn-del {
+  background-color: black;
+  border: none;
+}
+
+.help-icon-wrapper {
+  position: fixed;
+  top: 2%;
+  right: 21%;
+}
+
+.volume {
+  padding-right: 30px;
+}

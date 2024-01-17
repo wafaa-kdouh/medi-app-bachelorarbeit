@@ -1,0 +1,16 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+.container {
+  height: 100vh;
+  background-color: black;
+}
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "primary": #ff8400,
+  )
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";

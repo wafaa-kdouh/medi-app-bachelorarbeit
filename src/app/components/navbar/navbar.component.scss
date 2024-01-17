@@ -1,0 +1,19 @@
+.navbar {
+  background-color: #1d1a05;
+  box-shadow: 0 10px 20px rgba(82, 74, 74, 0.3);
+}
+
+.scanning {
+  margin-top: -5rem;
+  background-color: #ff8400;
+  box-shadow: 0 5px 5px rgba(255, 147, 85, 0.35);
+
+  a {
+    display: block;
+    padding: 1.75rem;
+  }
+
+  img {
+    width: 60px;
+  }
+}

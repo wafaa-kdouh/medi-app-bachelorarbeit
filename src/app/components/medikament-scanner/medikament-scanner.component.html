@@ -1,0 +1,20 @@
+<!-- <div class="help-icon-wrapper">
+  <img
+    src="../../assets/icons/help.svg"
+    alt="help-icon"
+    class="help-icon"
+    (click)="speakHelp()"
+  />
+</div> -->
+
+<button
+  class="btn-scan wrapper"
+  (click)="toggleScanner()"
+  [hidden]="scannerOpen"
+>
+  <img src="../../../assets/icons/barcode_sc.svg" class="Barcod-icon" />
+</button>
+
+<div class="scanner-wrapper" [ngClass]="{ open: scannerOpen }">
+  <div id="reader"></div>
+</div>

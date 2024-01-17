@@ -1,0 +1,27 @@
+<div class="position-relative">
+  <img
+    class="w-100 position-absolute bottom-0"
+    alt="Navigation Hintergund"
+    src="../../assets/icons/Intersect.svg"
+  />
+
+  <div class="navbar w-100 d-flex rounded p-4">
+    <a routerLink="list" (click)="textToSpeech('Medikamenten Liste')">
+      <img src="../../assets/icons/Medikamente-icon.svg" alt="Tabletten Icon" />
+    </a>
+
+    <div class="scanning rounded-circle">
+      <a routerLink="scan" (click)="textToSpeech('Barcode Scanner')">
+        <img src="../../assets/icons/Group 1.svg" alt="Barcod Icon" />
+      </a>
+    </div>
+
+    <a
+      routerLink="add"
+      class="Mediplan-icon"
+      (click)="textToSpeech('Medikament hinzufügen')"
+    >
+      <img src="../../assets/icons/add.svg" alt="Medikament hinzufügen Icon" />
+    </a>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+:host {
+  height: calc(100% - 5rem - 2rem);
+  overflow-y: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-scan {
+  border: black;
+  background: black;
+  position: absolute;
+  top: 7rem;
+  right: 0.5rem;
+}
+
+.help-icon-wrapper {
+  position: fixed;
+  top: 2%;
+  right: 21%;
+}
+
+.Barcod-icon {
+  border: black;
+  background: black;
+  position: absolute;
+  top: -1rem;
+  right: -0.5rem;
+  width: 2;
+}

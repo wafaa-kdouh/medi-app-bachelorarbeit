@@ -1,0 +1,54 @@
+<!-- <div class="help-icon-wrapper">
+  <img
+    src="../../assets/icons/help.svg"
+    alt="help-icon"
+    class="help-icon"
+    (click)="speakHelp()"
+  />
+</div> -->
+
+<h1 class="text-white">Medikamenten Hinzufügen</h1>
+<div class="wrapper">
+  <button
+    *ngIf="!html5QrCode.isScanning && !openModal"
+    class="btn btn-lg btn-primary w-100 mt-4"
+    (click)="startBarcodeScanner()"
+  >
+    <img
+      src="../../assets/icons/Group 1.svg"
+      alt="Barcod Icon"
+      class="Barcod-icon"
+    />
+  </button>
+
+  <div id="reader"></div>
+
+  <div class="modal" [class.d-block]="openModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header d-flex justify-content-between">
+          <h1 class="modal-title text-white">
+            {{ temp.bezeichnungMedikament }}
+          </h1>
+          <img
+            class="p-3"
+            src="../../../assets/icons/volume_up.svg"
+            alt="Lautsprecher"
+            (click)="textToSpeech(temp.bezeichnungMedikament)"
+          />
+        </div>
+        <div class="modal-footer">
+          <button (click)="save()" class="btn btn-lg btn-success w-100">
+            <img
+              src="../../assets/icons/Vector.svg"
+              alt="Medikament speichern"
+            />
+          </button>
+          <button (click)="cancel()" class="btn btn-lg btn-danger w-100">
+            <img src="../../../assets/icons/delete.svg" alt="delete-icon" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
